@@ -2,7 +2,7 @@ apiVersion: v1
 kind: Service
 metadata:
   name: mongodbb13-service
-  namespace: tmb13db
+  namespace: tmb13db-argocd
 spec:
   type: ClusterIP
   selector:

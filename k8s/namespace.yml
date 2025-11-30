@@ -1,14 +1,14 @@
 apiVersion: v1
 kind: Namespace
 metadata:
-  name: tmb13db
+  name: tmb13db-argocd
 ---
 apiVersion: v1
 kind: Namespace
 metadata:
-  name: tmb13be
+  name: tmb13be-argocd
 ---
 apiVersion: v1
 kind: Namespace
 metadata:
-  name: tmb13fe
+  name: tmb13fe-argocd

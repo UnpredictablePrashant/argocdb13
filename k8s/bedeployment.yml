@@ -12,12 +12,7 @@ spec:
     metadata:
       labels:
         app: backend
-    spec:
-      initContainers:
-      - name: "asdasdfasfd"
-        image: axas:latest
-        command: ['ls']
-  
+    spec: 
       containers:
         - name: backend
           image: prashantdey/travelmemory:be
@@ -31,12 +26,6 @@ spec:
               secretKeyRef:
                 name: backend-secret
                 key: MONGO_URI
-          volumeMounts:
-            - name:  app-logs
-              mountPath:  /var/log/app
-
-        - name: logs
-          image: axya:latest
           volumeMounts:
             - name:  app-logs
               mountPath:  /var/log/app

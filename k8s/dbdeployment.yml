@@ -2,7 +2,7 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: mongodbdeployment
-  namespace: tmb13db
+  namespace: tmb13db-argocd
 spec:
   replicas: 1
   selector:
